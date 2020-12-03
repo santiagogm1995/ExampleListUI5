@@ -1,0 +1,25 @@
+{
+  "xsappname": "test462v1s_xsuaa",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.read"
+    },
+    {
+      "name": "uaa.user",
+      "description": "UAA"
+    }
+  ],
+
+  "role-templates": [
+    {
+      "name": "Viewer",
+      "scope-references": ["$XSAPPNAME.read"]
+    },
+    {
+      "name": "Token_Exchange",
+      "description": "UAA",
+      "scope-references": ["uaa.user"]
+    }
+  ]
+}

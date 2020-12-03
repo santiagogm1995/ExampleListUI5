@@ -1,0 +1,32 @@
+ID: test462v1s
+_schema-version: 3.2.0
+version: 0.0.1
+parameters:
+  enable-parallel-deployments: true
+modules:
+  - name: test462v1s
+    type: nodejs
+    path: approuter
+    parameters:
+      disk-quota: 512M
+      memory: 512M
+    requires:
+      - name: test462v1s_destination
+      - name: test462v1s_xsuaa
+    build-parameters:
+      builder: custom
+      commands:
+        - npm install
+        - npm run build:ui --prefix ..
+resources:
+  - name: test462v1s_destination
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service-plan: lite
+      service: destination
+  - name: test462v1s_xsuaa
+    type: org.cloudfoundry.managed-service
+    parameters:
+      path: ./xs-security.json
+      service-plan: application
+      service: xsuaa

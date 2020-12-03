@@ -1,0 +1,30 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": "ui5",
+  "parserOptions": {
+    "ecmaVersion": 2018
+    
+  },
+  "globals": {
+    "sap": true,
+    "jQuery": true,
+    "QUnit": true,
+    "$": true
+  },
+  "rules": {
+    "no-mixed-spaces-and-tabs":"off",
+    "no-unused-expressions":"off",
+    "no-empty-function":"warn",
+    "consistent-this":"off",
+    "ui5/no-global-name": "off",
+    "ui5/hungarian-notation":"off",
+    "no-unused-vars": "off",
+    "eqeqeq":"off",
+    "new-cap":"off",
+    "no-alert":"off",
+    "prefer-const":"off"
+  }
+}

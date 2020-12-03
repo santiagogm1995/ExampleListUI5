@@ -1,0 +1,64 @@
+<mvc:View controllerName="test462v1s.test462v1s.controller.PersonaListPage" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:f="sap.f" xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core"
+	xmlns:smartTable="sap.ui.comp.smarttable" xmlns:smartFilterBar="sap.ui.comp.smartfilterbar">
+	<f:DynamicPage id="sIdPage" stickySubheaderProvider="iconTabBar" class="sapUiNoContentPadding" showFooter="true">
+		<f:content>
+			<Table selectionChange="check" mode="MultiSelect" id="PersonaList" inset="false"
+				items="{ path: 'PersonaList>/PersonaCollection' , sorter: { path: 'idField' }}" class="list" itemPress="onListPress">
+				<headerToolbar>
+					<OverflowToolbar class="toolBar">
+						<content>
+							<Button icon="sap-icon://nav-back" press="onNavBack"/>
+							<Title text="Persona" class="ListTitle"/>
+							<ToolbarSpacer/>
+							<SearchField id="searchField" width="20%" selectOnFocus="false" class="filter" liveChange="onFilterPersonaListPage"/>
+							<Button id="createButton" text="{i18n>Create}" icon="sap-icon://add-employee" press="Create"></Button>
+							<Button id="updateButton" text="{i18n>Update}" icon="sap-icon://edit" press="Update" enabled="false"></Button>
+							<Button id="deleteButton" text="{i18n>Delete}" icon="sap-icon://delete" press="Delete" enabled="false"></Button>
+						</content>
+					</OverflowToolbar>
+				</headerToolbar>
+				<columns>
+					<Column width="12em">
+						<Text text="id"/>
+					</Column>
+					<Column width="12em">
+						<Text text="Dni"/>
+					</Column>
+					<Column width="12em">
+						<Text text="Apellidos"/>
+					</Column>
+					<Column width="12em">
+						<Text text="Edad"/>
+					</Column>
+					<Column width="12em">
+						<Text text="Estado"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Active">
+						<cells>
+								<Text text="{PersonaList>id}"/>
+									<Text text="{PersonaList>Dni}"/>
+									<Text text="{PersonaList>Apellidos}"/>
+									<Text text="{PersonaList>Edad}"/>
+									<Text text="{PersonaList>Estado}"/>
+                        </cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</f:content>
+		<!-- DynamicPage Footer -->
+		<f:footer>
+			<OverflowToolbar>
+				<Label text="Offline"/>
+				<Switch state="false">
+					<layoutData>
+						<FlexItemData growFactor="1"/>
+					</layoutData>
+				</Switch>
+				<ToolbarSpacer/>
+			</OverflowToolbar>
+		</f:footer>
+	</f:DynamicPage>
+</mvc:View>

@@ -1,0 +1,105 @@
+@media (min-width: 600px) {
+.classHome > section {
+    height: 50%  !important;
+    position: absolute  !important;
+    isolation: isolate;
+    z-index: 0;
+    left: 40%  !important;
+    top: 40%  !important;
+}
+}
+.sapMShellGlobalOuterBackground{
+	background:#6a6d709e;
+}
+
+.sapMShellContent{
+	 box-shadow: 0px 5px 6px 7px rgba(0,0,0,0.3);
+}
+
+.filter .sapMSFF{
+	border-radius: 25px;
+}
+
+.filter .sapMFocus:focus{
+	border-radius: 25px;
+}
+
+.list .sapMLIB.sapMListTblRow {
+	font-size:1rem !important;
+}
+
+.list .sapMLIB.sapMListTblRow  {
+    width: 1.5rem;
+    height: 2rem;
+}
+
+.list .sapMText.sapMObjLTitle{
+	padding-top: 0.6rem;
+}
+
+.list .sapMLIB.sapMListTblRow:hover{
+	background: #6887a71c;
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -webkit-transform:scale(1.005);
+    transform:scale(1.005);
+}
+
+.filter .sapMSFB {
+	border-radius: 100px;
+}
+
+.sapMBtn:not(.sapMBtnDisabled):hover>.sapMBtnInner:not(.sapMToggleBtnPressed):not(.sapMBtnEmphasized):not(.sapMBtnAccept):not(.sapMBtnReject):not(.sapMBtnActive):not(.sapMBtnGhost) {
+	border-color: transparent;
+    background: #354a5f;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.sapMBtn:not(.sapMBtnDisabled):active>.sapMBtnInner:not(.sapMToggleBtnPressed):not(.sapMBtnEmphasized):not(.sapMBtnAccept):not(.sapMBtnReject):not(.sapMBtnActive):not(.sapMBtnGhost) {
+	border-color: transparent;
+    background: #ccdae7;
+    color: #fff;
+    border: 1px solid #354a5f;
+    border-radius: 10px;
+    background: #354a5f;
+}
+
+.sapMBtn .sapMBtnInner:not(.sapMToggleBtnPressed):not(.sapMBtnEmphasized):not(.sapMBtnAccept):not(.sapMBtnReject):not(.sapMBtnActive):not(.sapMBtnGhost) {
+	border-color: transparent;
+    color: #fff;
+    border: 1px solid #354a5f;
+    border-radius: 10px;
+    background: #354a5f;
+}
+
+.sapMBtnActive {
+	border-color: transparent;
+    color: #fff;
+    border: 1px solid #354a5f;
+    border-radius: 10px;
+    background: #354a5f !important;
+}
+
+.sapMBtnActive > * {
+    background: #354a5f !important;
+    border-radius: 10px;
+}
+
+.sapMBtn .sapMBtnIcon{
+	color:#fff;
+}
+
+.formAdd .sapMInputBaseContentWrapper:not(.sapMInputBaseReadonlyWrapper) {
+    border-radius: 10px;
+}
+
+.ListTitle > * {
+    font-size: 1.5rem;
+}
+
+.responsive {
+    height: auto;
+}
+

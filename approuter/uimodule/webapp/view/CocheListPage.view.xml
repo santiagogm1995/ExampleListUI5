@@ -1,0 +1,60 @@
+<mvc:View controllerName="test462v1s.test462v1s.controller.CocheListPage" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:f="sap.f" xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core"
+	xmlns:smartTable="sap.ui.comp.smarttable" xmlns:smartFilterBar="sap.ui.comp.smartfilterbar">
+	<f:DynamicPage id="sIdPage" stickySubheaderProvider="iconTabBar" class="sapUiNoContentPadding" showFooter="true">
+		<f:content>
+			<Table selectionChange="check" mode="MultiSelect" id="CocheList" inset="false"
+				items="{ path: 'CocheList>/CocheCollection' , sorter: { path: 'idField' }}" class="list" itemPress="onListPress">
+				<headerToolbar>
+					<OverflowToolbar class="toolBar">
+						<content>
+							<Button icon="sap-icon://nav-back" press="onNavBack"/>
+							<Title text="Coche" class="ListTitle"/>
+							<ToolbarSpacer/>
+							<SearchField id="searchField" width="20%" selectOnFocus="false" class="filter" liveChange="onFilterCocheListPage"/>
+							<Button id="createButton" text="{i18n>Create}" icon="sap-icon://add-employee" press="Create"></Button>
+							<Button id="updateButton" text="{i18n>Update}" icon="sap-icon://edit" press="Update" enabled="false"></Button>
+							<Button id="deleteButton" text="{i18n>Delete}" icon="sap-icon://delete" press="Delete" enabled="false"></Button>
+						</content>
+					</OverflowToolbar>
+				</headerToolbar>
+				<columns>
+					<Column width="12em">
+						<Text text="id"/>
+					</Column>
+					<Column width="12em">
+						<Text text="Modelo"/>
+					</Column>
+					<Column width="12em">
+						<Text text="Litros"/>
+					</Column>
+					<Column width="12em">
+						<Text text="Imagen"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Active">
+						<cells>
+								<Text text="{CocheList>id}"/>
+									<Text text="{CocheList>Modelo}"/>
+									<Text text="{CocheList>Litros}"/>
+                        			<Button text="Imagen" press="download"/>
+                        </cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</f:content>
+		<!-- DynamicPage Footer -->
+		<f:footer>
+			<OverflowToolbar>
+				<Label text="Offline"/>
+				<Switch state="false">
+					<layoutData>
+						<FlexItemData growFactor="1"/>
+					</layoutData>
+				</Switch>
+				<ToolbarSpacer/>
+			</OverflowToolbar>
+		</f:footer>
+	</f:DynamicPage>
+</mvc:View>

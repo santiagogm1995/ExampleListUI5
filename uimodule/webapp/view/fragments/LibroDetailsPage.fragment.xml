@@ -1,0 +1,46 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+	xmlns:f="sap.ui.layout.form" xmlns:u="sap.ui.unified">
+	<Dialog id="Dialog" title="{i18n>addLibro}" class="DialogClass">
+		<content>
+			<f:SimpleForm id="appointmentForm" editable="false" layout="ResponsiveGridLayout" labelSpanXL="3" labelSpanL="3" labelSpanM="3"
+				labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
+				singleContainerFullSize="false" visible="true">
+				<f:content>
+					<VBox class="formAdd">
+					<Input id="key" type="Text" enabled="false" visible="false"/>
+							
+				
+						
+						
+					
+						<Label text="Nombre:" labelFor="Nombre"/>				
+							<Input id="Nombre" type="Text" enabled="true"/>
+						
+					
+						<Label text="FechaPublicacion:" labelFor="FechaPublicacion"/>				
+							<DateTimePicker valueFormat="yyyy/MM/dd hh:mm" displayFormat="dd-MM-yyyy hh:mm" id="FechaPublicacion" placeholder="{i18n>entertime\}"
+								change="handleChange"/>
+						
+					
+						<Label text="Autor:" labelFor="Autor"/>				
+							<Input id="Autor" type="Text" enabled="true"/>
+						
+					
+						<Label text="Paginas:" labelFor="Paginas"/>				
+							<Input id="Paginas" type="Number" enabled="true"/>
+						
+					
+						<Label text="Fichero:" labelFor="Fichero"/>				
+            				<u:FileUploader id="Fichero" change="onChangeFichero" buttonText="Upload" />
+            				<Input id="FicheroValue" type="Text" enabled="true" visible="false" />
+			
+					</VBox>
+				</f:content>
+			</f:SimpleForm>
+		</content>
+		<buttons>
+			<Button text="Create" press="add" id="BotonAceptar"/>
+			<Button text="Cancel" press="close"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

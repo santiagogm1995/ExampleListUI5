@@ -1,0 +1,20 @@
+<mvc:View controllerName="test462v1s.test462v1s.controller.App" height="100%" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.f" xmlns:m="sap.m" xmlns:tnt="sap.tnt">
+	<Shell>
+		<tnt:ToolPage id="toolPage">
+			<tnt:header>
+				<f:ShellBar title="{i18n>appTitle}" showMenuButton="false"
+					homeIcon="https://raw.githubusercontent.com/SAP/ui5-tooling/master/docs/images/UI5_logo_wide.png"  showNotifications="true"
+					menuButtonPressed="onMenuButtonPress" showProductSwitcher="false">
+					<f:profile>
+						<f:Avatar id="idAvatar"/>
+					</f:profile>
+				</f:ShellBar>
+			</tnt:header>
+			<tnt:sideContent>
+			</tnt:sideContent>
+			<tnt:mainContents>
+				<App id="app"/>
+			</tnt:mainContents>
+		</tnt:ToolPage>
+	</Shell>
+</mvc:View>

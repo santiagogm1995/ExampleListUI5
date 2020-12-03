@@ -1,0 +1,1 @@
+sap.ui.define(["../utils/callProviders/AjaxCaller","../utils/callProviders/OdataCaller"],function(r,a){"use strict";return{getProvider:e=>{const t={ajax:r,odata:a};return t[e]}}});

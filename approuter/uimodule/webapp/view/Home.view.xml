@@ -1,0 +1,36 @@
+<mvc:View controllerName="test462v1s.test462v1s.controller.Home" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:f="sap.f" xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core"
+	xmlns:smartTable="sap.ui.comp.smarttable" xmlns:smartFilterBar="sap.ui.comp.smartfilterbar">
+	<f:DynamicPage id="sIdPage" stickySubheaderProvider="iconTabBar" class="sapUiNoContentPadding" showFooter="true">
+		<f:content>	
+			<form:SimpleForm id="SimpleFormChange" editable="true" layout="ResponsiveGridLayout" labelSpanL="1" labelSpanM="1" emptySpanL="7"
+				emptySpanM="7" columnsL="4" columnsM="4" class="editableForm" title="Formulario">
+				<form:content>
+	<Label text="User" labelFor="Usuario"/>
+		<Input id="Usuario" type="Text" value=""/>					
+	<Label text="Password" labelFor="Password"/>
+		<Input id="Password" type="Text" value=""/>					
+	
+	
+	
+				</form:content>
+			</form:SimpleForm>
+		</f:content>
+		<!-- DynamicPage Footer -->
+		<f:footer>
+			<OverflowToolbar>
+				<Label text="Offline"/>
+				<Switch state="false">
+					<layoutData>
+						<FlexItemData growFactor="1"/>
+					</layoutData>
+				</Switch>
+				<ToolbarSpacer/>
+						<Button  id="login" text="login" press="login"/>
+						<Button  id="SaveUser" text="SaveUser" press="SaveUser"/>
+						<Button  id="CRUD" text="CRUD" press="CRUD"/>
+			</OverflowToolbar>
+		</f:footer>
+	</f:DynamicPage>
+</mvc:View>
+

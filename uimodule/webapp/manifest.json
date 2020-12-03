@@ -1,0 +1,202 @@
+{
+  "_version": "1.12.0",
+  "sap.app": {
+    "id": "test462v1s.test462v1s",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "sourceTemplate": {
+      "id": "ui5template.basicSAPUI5ApplicationProject",
+      "version": "1.40.12"
+    },
+    "dataSources": {
+      "S4BACKEND": {
+        "uri": "/S4BACKEND/Ztest462v1s",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0"
+        }
+      }
+    }
+  },
+
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": false,
+    "rootView": {
+      "viewName": "test462v1s.test462v1s.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "app"
+    },
+    "dependencies": {
+      "minUI5Version": "1.65.6",
+      "libs": {
+        "sap.ui.layout": {},
+        "sap.ui.core": {},
+        "sap.m": {},
+        "sap.tnt": {},
+        "sap.f": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "test462v1s.test462v1s.i18n.i18n"
+        }
+      },
+      "S4BACKEND": {
+        "dataSource": "S4BACKEND",
+        "type": "sap.ui.model.odata.v2.ODataModel",
+        "settings": {
+          "defaultBindingMode": "TwoWay",
+          "metadataUrlParams": {
+            "sap-documentation": "heading"
+          }
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "test462v1s.test462v1s.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "DefaultAdminHomePage",
+          "pattern": "DefaultAdminHomePage",
+          "target": "DefaultAdminHomePage"
+        },
+        {
+          "name": "Home",
+          "pattern": "",
+          "target": "Home"
+        },
+        {
+          "name": "SegundaVista",
+          "pattern": "SegundaVista",
+          "target": "SegundaVista"
+        },
+        {
+          "name": "GoTerceraVista",
+          "pattern": "GoTerceraVista",
+          "target": "GoTerceraVista"
+        },
+        {
+          "name": "DetailPage",
+          "pattern": "DetailPage",
+          "target": "DetailPage"
+        },
+        {
+          "name": "PersonaListPage",
+          "pattern": "PersonaListPage",
+          "target": "PersonaListPage"
+        },
+        {
+          "name": "LibroListPage",
+          "pattern": "LibroListPage",
+          "target": "LibroListPage"
+        },
+        {
+          "name": "CocheListPage",
+          "pattern": "CocheListPage",
+          "target": "CocheListPage"
+        }
+      ],
+
+      "targets": {
+        "Targetapp": {
+          "viewType": "XML",
+          "transition": "flip",
+          "viewId": "app",
+          "viewName": "App"
+        },
+
+        "DefaultAdminHomePage": {
+          "viewType": "XML",
+          "clearControlAggregation": false,
+          "viewName": "DefaultAdminHomePage",
+          "transition": "slide"
+        },
+        "Home": {
+          "viewType": "XML",
+          "clearControlAggregation": false,
+          "viewName": "Home",
+          "transition": "slide"
+        },
+        "SegundaVista": {
+          "viewType": "XML",
+          "clearControlAggregation": false,
+          "viewName": "SegundaVista",
+          "transition": "slide"
+        },
+        "GoTerceraVista": {
+          "viewType": "XML",
+          "clearControlAggregation": false,
+          "viewName": "GoTerceraVista",
+          "transition": "slide"
+        },
+        "DetailPage": {
+          "viewType": "XML",
+          "clearControlAggregation": false,
+          "viewName": "DetailPage",
+          "transition": "slide"
+        },
+        "PersonaListPage": {
+          "viewType": "XML",
+          "clearControlAggregation": false,
+          "viewName": "PersonaListPage",
+          "transition": "slide"
+        },
+        "LibroListPage": {
+          "viewType": "XML",
+          "clearControlAggregation": false,
+          "viewName": "LibroListPage",
+          "transition": "slide"
+        },
+        "CocheListPage": {
+          "viewType": "XML",
+          "clearControlAggregation": false,
+          "viewName": "CocheListPage",
+          "transition": "slide"
+        }
+      }
+    }
+  }
+}

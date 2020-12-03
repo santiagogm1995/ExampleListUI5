@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/model/json/JSONModel"],function(t){"use strict";let n=null;const e="S4BACKEND";return{setOdata:function(t){n=t},getOdata:function(){return n},getBack:function(){return e}}});

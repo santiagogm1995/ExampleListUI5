@@ -1,0 +1,46 @@
+<mvc:View controllerName="test462v1s.test462v1s.controller.GoTerceraVista" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:f="sap.f" xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core"
+	xmlns:smartTable="sap.ui.comp.smarttable" xmlns:smartFilterBar="sap.ui.comp.smartfilterbar">
+	<f:DynamicPage id="sIdPage" stickySubheaderProvider="iconTabBar" class="sapUiNoContentPadding" showFooter="true">
+		<f:content>	
+			<form:SimpleForm id="SimpleFormChange" editable="true" layout="ResponsiveGridLayout" labelSpanL="1" labelSpanM="1" emptySpanL="7"
+				emptySpanM="7" columnsL="4" columnsM="4" class="editableForm" title="Formulario">
+				<form:content>
+	<Label text="SoyString" labelFor="SoyString"/>
+		<Input id="SoyString" type="Text" value=""/>					
+	<Label text="SoyPassword" labelFor="SoyPassword"/>
+		<Input id="SoyPassword" type="Password" value=""/>							
+	<Label text="SoyNumero" labelFor="SoyNumero"/>
+		<Input id="SoyNumero" type="Number" value=""/>											
+	<Label text="SoyDecimal" labelFor="SoyDecimal"/>
+		<Input id="SoyDecimal" type="Number" value=""/>						
+	<Label text="SoyFechayHora" labelFor="SoyFechayHora"/>
+		<DateTimePicker valueFormat="yyyy/MM/dd hh:mm" displayFormat="dd-MM-yyyy hh:mm" id="SoyFechayHora" placeholder="{i18n>entertime}" change="handleChange" value=""/>						
+	<Label text="User" labelFor="User"/>
+		<Input id="User" type="Text" value=""/>					
+	<Label text="SoyFecha" labelFor="SoyFecha"/>
+		<DatePicker id="SoyFecha" displayFormat="dd/MM/yyyy" placeholder="{i18n>ddmmyyyy}" change="handleCreateChange" valueFormat="dd/MM/yyyy" value=""/>						
+	<Label text="SoyBoolean" labelFor="SoyBoolean"/>
+		<CheckBox id="SoyBoolean" text="Boolean"/>						
+	
+	
+	
+				</form:content>
+			</form:SimpleForm>
+		</f:content>
+		<!-- DynamicPage Footer -->
+		<f:footer>
+			<OverflowToolbar>
+				<Label text="Offline"/>
+				<Switch state="false">
+					<layoutData>
+						<FlexItemData growFactor="1"/>
+					</layoutData>
+				</Switch>
+				<ToolbarSpacer/>
+						<Button  id="GoSegundaVista" text="GoSegundaVista" press="GoSegundaVista"/>
+			</OverflowToolbar>
+		</f:footer>
+	</f:DynamicPage>
+</mvc:View>
+

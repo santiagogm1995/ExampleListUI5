@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/test/opaQunit","test462v1s/test462v1s/controller/BaseController"],function(t,s,e){"use strict";QUnit.test("should add two numbers",function(t){t.equal(4+4,8,"1 + 1 = 2")})});

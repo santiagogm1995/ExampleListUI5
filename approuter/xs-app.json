@@ -1,0 +1,18 @@
+{
+  "welcomeFile": "uimodule/index.html",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+    {
+      "source": "^/uimodule/(.*)$",
+      "target": "$1",
+      "authenticationType": "xsuaa",
+      "localDir": "uimodule/webapp"
+    },
+    {
+      "source": "^/api/(.*)",
+      "destination": "CrudCAD"
+    }
+  ]
+}

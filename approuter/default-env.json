@@ -1,0 +1,59 @@
+{
+  "VCAP_SERVICES": {
+    "destination": [
+      {
+        "label": "destination",
+        "provider": null,
+        "plan": "lite",
+        "name": "test462v1s_destination",
+        "tags": ["destination", "conn", "connsvc"],
+        "instance_name": "test462v1s_destination",
+        "binding_name": null,
+        "credentials": {
+          "uaadomain": "authentication.eu10.hana.ondemand.com",
+          "tenantmode": "dedicated",
+          "clientid": "sb-clone8cdcedd0f3e44863ae24fc0473937475!b65348|destination-xsappname!b404",
+          "instanceid": "8cdcedd0-f3e4-4863-ae24-fc0473937475",
+          "verificationkey": "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyNATQXwWwImrg+iTSdFWkmfR5GdrSVu0QG2oAgExjhBHzzmqVbx3hhCgEj962D8GVMR6O/Ypj/3f0vEIs25TC9G2Lyj+QFFU7synGdvJ8IXX/AiS7pRGaKavfx+mSj4y/uUSoGlNHK01nScFbC8LlIAAnwjLO0t+T7LfCBrPtU1sM5DMc3+fG/z7lUYQoYuoaHIXFpcyHL0LdTtSiQKUHSkxmVJ08z3XBRrgNm0XWVq0D3VSDSee9NIoTKmQany9F+U4M+yCsQi0bVluhfp3rwVepWYrXew/7JrdzfekS5wJmDGnHber8VAgF9a13rDG0QOJlLgDyoFjefouUGPcywIDAQAB-----END PUBLIC KEY-----",
+          "xsappname": "clone8cdcedd0f3e44863ae24fc0473937475!b65348|destination-xsappname!b404",
+          "identityzone": "a340e688trial",
+          "clientsecret": "56934547-e44f-405e-8110-363e2d7d1d12$HVugzIQajLtiPeenKBiPMc94n_U7cSvpe5WvGlaCxbI=",
+          "tenantid": "c36df829-1259-430b-a724-8cb640410691",
+          "uri": "https://destination-configuration.cfapps.eu10.hana.ondemand.com",
+          "url": "https://a340e688trial.authentication.eu10.hana.ondemand.com"
+        },
+        "syslog_drain_url": null,
+        "volume_mounts": []
+      }
+    ],
+    "xsuaa": [
+      {
+        "label": "xsuaa",
+        "provider": null,
+        "plan": "application",
+        "name": "test462v1s_xsuaa",
+        "tags": ["xsuaa"],
+        "instance_name": "test462v1s_xsuaa",
+        "binding_name": null,
+        "credentials": {
+          "tenantmode": "dedicated",
+          "sburl": "https://internal-xsuaa.authentication.eu10.hana.ondemand.com",
+          "subaccountid": "c36df829-1259-430b-a724-8cb640410691",
+          "clientid": "sb-test462v1s_xsuaa!t65348",
+          "xsappname": "test462v1s_xsuaa!t65348",
+          "clientsecret": "KbNSsBLw53GT3HzlIkQ40jx0iyI=",
+          "url": "https://a340e688trial.authentication.eu10.hana.ondemand.com",
+          "uaadomain": "authentication.eu10.hana.ondemand.com",
+          "verificationkey": "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyNATQXwWwImrg+iTSdFWkmfR5GdrSVu0QG2oAgExjhBHzzmqVbx3hhCgEj962D8GVMR6O/Ypj/3f0vEIs25TC9G2Lyj+QFFU7synGdvJ8IXX/AiS7pRGaKavfx+mSj4y/uUSoGlNHK01nScFbC8LlIAAnwjLO0t+T7LfCBrPtU1sM5DMc3+fG/z7lUYQoYuoaHIXFpcyHL0LdTtSiQKUHSkxmVJ08z3XBRrgNm0XWVq0D3VSDSee9NIoTKmQany9F+U4M+yCsQi0bVluhfp3rwVepWYrXew/7JrdzfekS5wJmDGnHber8VAgF9a13rDG0QOJlLgDyoFjefouUGPcywIDAQAB-----END PUBLIC KEY-----",
+          "apiurl": "https://api.authentication.eu10.hana.ondemand.com",
+          "identityzone": "a340e688trial",
+          "identityzoneid": "c36df829-1259-430b-a724-8cb640410691",
+          "tenantid": "c36df829-1259-430b-a724-8cb640410691",
+          "zoneid": "c36df829-1259-430b-a724-8cb640410691"
+        },
+        "syslog_drain_url": null,
+        "volume_mounts": []
+      }
+    ]
+  }
+}

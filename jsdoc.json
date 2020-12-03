@@ -1,0 +1,15 @@
+{
+  "source": {
+    "include": ["./uimodule/webapp/"],
+    "includePattern": ".*.js$"
+  },
+  "plugins": ["plugins/markdown"],
+  "opts": {
+    "encoding": "utf8",
+    "readme": "./readme.md",
+    "destination": "docs/",
+    "recurse": true,
+    "verbose": true,
+    "template": "node_modules/minami"
+  }
+}
