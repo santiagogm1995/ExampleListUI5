@@ -1,37 +1,43 @@
 {
 	"name": "test462v1s_uimodule",
 	"version": "0.0.1",
-	"buildTimestamp": "202012031759",
+	"buildTimestamp": "202012031829",
 	"scmRevision": "",
 	"libraries": [
 		{
-			"name": "sap.ui.unified",
-			"version": "1.77.0",
-			"buildTimestamp": "202012031759",
-			"scmRevision": ""
-		},
-		{
 			"name": "sap.m",
-			"version": "1.77.0",
-			"buildTimestamp": "202012031759",
-			"scmRevision": ""
-		},
-		{
-			"name": "sap.ui.layout",
-			"version": "1.77.0",
-			"buildTimestamp": "202012031759",
+			"version": "1.82.0",
+			"buildTimestamp": "202012031829",
 			"scmRevision": ""
 		},
 		{
 			"name": "sap.ui.core",
-			"version": "1.77.0",
-			"buildTimestamp": "202012031759",
+			"version": "1.82.0",
+			"buildTimestamp": "202012031829",
+			"scmRevision": ""
+		},
+		{
+			"name": "sap.ui.layout",
+			"version": "1.82.0",
+			"buildTimestamp": "202012031829",
+			"scmRevision": ""
+		},
+		{
+			"name": "sap.ui.unified",
+			"version": "1.82.0",
+			"buildTimestamp": "202012031829",
 			"scmRevision": ""
 		},
 		{
 			"name": "sap.tnt",
-			"version": "1.77.0",
-			"buildTimestamp": "202012031759",
+			"version": "1.82.0",
+			"buildTimestamp": "202012031829",
+			"scmRevision": ""
+		},
+		{
+			"name": "sap.f",
+			"version": "1.82.0",
+			"buildTimestamp": "202012031829",
 			"scmRevision": ""
 		}
 	]
